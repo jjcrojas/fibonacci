@@ -1,19 +1,18 @@
 def recur_fibo(n):
-   """Recursive function to
-   print Fibonacci sequence"""
+   """Funcion Recursiva"""
    if n <= 1:
        return n
    else:
        return(recur_fibo(n-1) + recur_fibo(n-2))
 
 
-# take input from the user
+# Numero dado por usuario
 nterms = int(input("How many terms? "))
 
-# check if the number of terms is valid
+# Mirar si el numero es valido
 if nterms <= 0:
-   print("Plese enter a positive integer")
+   print("Por favor ingrese un enero positivo")
 else:
-   print("Fibonacci sequence:")
+   print("Serie Fibonacci:")
    for i in range(nterms):
        print(recur_fibo(i))
