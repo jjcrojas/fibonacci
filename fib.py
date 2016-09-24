@@ -8,13 +8,13 @@ def recur_fibo(n):
 
 
 # Se toma el valor ingresado porel usuario
-nterms = int(input("Ingrese el numero al que se le calculara la serie? "))
+nterms = int(input("Ingrese el número al que se le calculara la serie? "))
 
 # Se mira si el numero dado es valido
 #Prueba de comentario
 if nterms <= 0:
-   print("Por favor ingresar un entero positivo")
+   print("Por favor ingresar un entero positivo para calcular")
 else:
-   print("Serie Fibonacci:")
+   print("Serie Fibonacci: ")
    for i in range(nterms):
        print(recur_fibo(i))
